@@ -6,181 +6,437 @@
     <meta name="theme-color" content="#ffff" />
     <title>David M. Alzate | Portafolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/letterIcon-d.ico" type="image/x-icon">
     <script src="js/app.js" defer></script>
 </head>
 <body>
-
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="img/photo__perfil.jpeg" alt="David Alexander Machado Alzate Logo Image"
+            class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">David M. Alzate</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined">
+              home
+              </span>Home
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#about" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined">
+              person
+              </span>About
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#projects" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined">
+              business_center
+              </span>Projects 
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#contact" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined">
+              alternate_email
+              </span>Contact
+            </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="cursor"></div>
   <div class="cursor2"></div>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img src="img/photo__perfil.jpeg" alt="David Alexander Machado Alzate Logo Image"
-              class="header__logo-img" />
-          </div>
-          <span class="header__logo-sub">David M. Alzate</span>
+  <section class="sec__primary">
+    <div class="home">
+      <div class="home__content">
+        <h3 class="h-primary">Hi, my name is</h3>
+        <div class="home__name">
+          <h2 class="h-secondary">David Machado.</h2>
+          <svg width="0" height="0">
+            <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+              <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+              <feColorMatrix type="saturate" value="1.3"></feColorMatrix>
+              <feComposite in="SourceGraphic"></feComposite>
+            </filter>
+          </svg>
+          <h2 class="text-primary">Creating digital solutions for a profound human impact.</h2>
         </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./" class="header__link">
-                <span class="material-symbols-outlined">
-                home
-                </span>Home
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./#about" class="header__link">
-                <span class="material-symbols-outlined">
-                person
-                </span>About
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./#projects" class="header__link">
-                <span class="material-symbols-outlined">
-                business_center
-                </span>Projects 
-              </a>
-            </li>
-            <li class="header_link-wrapper">
-              <a href="./#contact" class="header__link">
-                <span class="material-symbols-outlined">
-                alternate_email
-                </span>Contact
-              </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-            <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none" />
-          </div>
+        
+        <div class="home__info">
+          <p class="text-secondary">
+            My passion lies in designing exceptional software that drives real change. I see technology as a vehicle to sow positive impacts, backed by a deep sense of empathy and purpose.
+          </p>
         </div>
+        
       </div>
-    </header>
+      <button type="button" class="home__button">Checkout my projects!</button>
+    </div>
+    <div class="home__socials">
+      <div class="home__social">
+        <a href="https://linkedin.com/in/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer"
+          target="_blank" class= "link__proyect">
+          <img src="img/icon-linkedin.png" alt="David Machado Linkedin Profile"
+            class="home__social-icon" />
+        </a>
+      </div>
+      <div class="home__social">
+        <a href="https://twitter.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+          <img src="img/icon-twitter.png" alt="David Machado Twitter Profile" class="home__social-icon" />
+        </a>
+      </div>
+      <div class="home__social">
+        <a href="https://www.youtube.com/" class="home__social-icon-link home__social-icon-link--bd-none" rel="noreferrer" target="_blank" class= "link__proyect">
+          <img src="img/icon-youtube.png" alt="David Machado Youtube Channel" class="home__social-icon" />
+        </a>
+      </div>
+      <div class="home__social">
+        <a href="https://github.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+          <img src="img/icon-github.png" alt="David Machado Github Profile" class="home__social-icon" />
+        </a>
+      </div>
 
-    <section class="sec__primary">
-      <div class="home">
-        <div class="home__content">
-          <h3 class="h-primary">Hi, my name is</h3>
-          <div class="home__name">
-            <h2 class="h-secondary">David Machado.<span class="sh-secondary">&#160;</span></h2>
-            <h2 class="text-primary">Helping people make the world a better place trough quality software. </h2>
-          </div>
-          
-          <div class="home__info">
-            <p class="text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quidem sint laborum, ratione, dignissimos cupiditate qui minus architecto eveniet quasi explicabo libero illum ex accusantium debitis molestiae asperiores voluptatem temporibus?
+      <div class="home__social">
+        <a href="https://instagram.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+          <img src="img/icon-instagram.png" alt="David Machado Profile" class="home__social-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="home__line"></div>
+    <div class="home__lineEmail">avidmachado@gmail.com</div>
+    <div class="contain__scroll">
+      <div class="scroll-icon"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              I'm a Junior Developer with an <strong>intermediate-advanced</strong> proficiency in <strong>Python</strong> and a solid foundation in <strong>Java</strong>. My focus revolves around data structures like <strong>linked lists</strong>, <strong>trees</strong>, and <strong>graphs</strong>, along with <strong>sorting</strong> and <strong>searching</strong> algorithms.
+            </p>
+            <p class="about__content-details-para">
+              In the realm of <strong>Front-end</strong> development, I've honed skills in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, ensuring appealing and functional interfaces. I've been involved in various <strong>projects</strong> showcasing my expertise and creativity in this domain.
+            </p>
+            <p class="about__content-details-para">
+              Open to <strong>job opportunities</strong> where I can contribute, learn, and grow. If you believe my profile aligns with your needs, please don't hesitate to <strong>contact me</strong>.
             </p>
           </div>
+          
+          <a href="./#contact" class="btn">Contact</a>
         </div>
-        <button type="button" class="home__button">Checkout my projects!</button>
-      </div>
-      <div class="home__socials">
-        <div class="home__social">
-          <a href="https://linkedin.com/in/" class="home__social-icon-link" rel="noreferrer"
-            target="_blank">
-            <img src="img/icon-linkedin.png" alt="David Machado Linkedin Profile"
-              class="home__social-icon" />
-          </a>
-        </div>
-        <div class="home__social">
-          <a href="https://twitter.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
-            <img src="img/icon-twitter.png" alt="David Machado Twitter Profile" class="home__social-icon" />
-          </a>
-        </div>
-        <div class="home__social">
-          <a href="https://www.youtube.com/" class="home__social-icon-link home__social-icon-link--bd-none" rel="noreferrer" target="_blank">
-            <img src="img/icon-youtube.png" alt="David Machado Youtube Channel" class="home__social-icon" />
-          </a>
-        </div>
-        <div class="home__social">
-          <a href="https://github.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
-            <img src="img/icon-github.png" alt="David Machado Github Profile" class="home__social-icon" />
-          </a>
-        </div>
-  
-        <div class="home__social">
-          <a href="https://instagram.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
-            <img src="img/icon-instagram.png" alt="David Machado Profile" class="home__social-icon" />
-          </a>
+        <div class="about__content-skills">
+          <h3 class="about__content-title"><strong>My Skills</strong></h3>
+          <div class="skills">
+            <div class="skills__skill"><strong>Python</strong></div>
+            <div class="skills__skill"><strong>Django</strong></div>
+            <div class="skills__skill"><strong>JavaScript</strong></div>
+            <div class="skills__skill"><strong>Bootstrap</strong></div>
+            <div class="skills__skill"><strong>Diseño</strong></div>
+            <div class="skills__skill"><strong>SQL</strong></div>
+            <div class="skills__skill"><strong>Java</strong></div>
+            <div class="skills__skill"><strong>HTML/CSS</strong></div>
+            <div class="skills__skill"><strong>Aprendizaje</strong></div>
+            <div class="skills__skill"><strong>Lógica</strong></div>
+            <div class="skills__skill"><strong>Pruebas</strong></div>
+            <div class="skills__skill"><strong>Ética</strong></div>
+          </div>
         </div>
       </div>
-      <div class="home__line"></div>
-      <div class="home__lineEmail">avidmachado@gmail.com</div>
-      <div class="contain__scroll">
-        <div class="scroll-icon"></div>
-      </div>
-    </section>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="projects-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__projects">My Recent Proyects</span>
+        <span class="heading-sec__subProjects">
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </span>
+      </h2>
+        <section class="card-container">
+          <!-- Genera divs para cada celda del grid -->
+          <a href="https://davidmachadopy.github.io/Login_Instagram/" target="_blank" class= "link__proyect"> 
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/card_ig_op4.jfif);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #1</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/shopping__Car.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #2</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://davidmachadopy.github.io/Macondo/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/macondo__op1.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">PROJECTS #3</h3>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a href="https://davidmachadopy.github.io/Formulario/" target="_blank" class= "link__proyect"> 
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/form.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://davidmachadopy.github.io/Hogwarts/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/hogwarts__op5.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">PROJECTS #4</h3>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/CV.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://davidmachadopy.github.io/PetPaws/" target="_blank" class= "link__proyect"> 
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/PetPaws.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/notes__avarage.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://davidmachadopy.github.io/KFC/" target="_blank" class= "link__proyect"> 
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/KFC__op2.jpg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+        </a>
+          <a href="https://davidmachadopy.github.io/Login/" target="_blank" class= "link__proyect"> 
+            <div class="card">
+              <div class="card-background" style="background-image: url(img/login.jpeg);">
+                <div class="content">
+                  <div class="card-category">David</div>
+                  <h3 class="card-heading">PROJECTS #4</h3>
+                </div>
+              </div>
+            </div>
+        </a>
+        </section>
+  </section>
+  <footer>
+    <div class="background">
+      
+      <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" class= "link__proyect"
+      x="0px"
+      y="0px"
+      width="100%"
+      height="100%"
+      viewBox="0 0 1600 900"
+    >
+        <defs>
+          <linearGradient id="bg" x2="0%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color: aqua"
+            ></stop>
+            <stop
+              offset="100%"
+              style="stop-color: rgba(38, 89, 190, 0.06)"
+            ></stop>
+          </linearGradient>
+          <path
+            id="wave"
+            fill="url(#bg)"
+            d="M
+            -363.852,450.589
+            c
+            0,0,
+            236.988-41.997,
+            505.475,0
 
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                I'm a <strong>Frontend Web Developer</strong> building the
-                Front-end of Websites and Web Applications that leads to the
-                success of the overall product. Check out some of my work in the
-                <strong>Projects</strong> section.
-              </p>
-              <p class="about__content-details-para">
-                I also like sharing content related to the stuff that I have
-                learned over the years in <strong>Web Development</strong> so it
-                can help other people of the Dev Community. Feel free to Connect
-                or Follow me on my
-                <a rel="noreferrer" href="https://linkedin.com/in/rammcodes" target="_blank">Linkedin</a>
-                where I post useful content related to Web Development and
-                Programming
-              </p>
-              <p class="about__content-details-para">
-                I'm open to <strong>Job</strong> opportunities where I can
-                contribute, learn and grow. If you have a good opportunity that
-                matches my skills and experience then don't hesitate to
-                <strong>contact</strong> me.
-              </p>
-            </div>
-            <a href="./#contact" class="btn">Contact</a>
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Github</div>
-              <div class="skills__skill">Responsive Design</div>
-              <div class="skills__skill">SEO</div>
-              <div class="skills__skill">Terminal</div>
-              <div class="skills__skill">Express Basics</div>
-              <div class="skills__skill">SQL Basics</div>
-            </div>
-          </div>
+            s400.981,38.998,
+            575.971,0
+
+            s293.985-39.278,505.474,5.859
+
+            s493.475,48.368,716.963-4.995
+
+            v460.106
+            H
+            -363.852
+
+            V
+            502.589
+            z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+
+      <div class="contentFooter">
+
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Introduction and Presentation:</li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Carrer Overview</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Objectives</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Who I Am</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Projects and Experience:</li>
+            <li><a href="#">Featured Projects</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Technologies Used</a></li>
+            <li><a href="#">Professional Experience</a></li>
+            <li><a href="#">Previous Roles</a></li>
+            <li><a href="#">Contributions</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact and Other Elements:</li>
+            <li><a href="#">Contact Information</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Contact Form</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Recommendations</a></li>
+          </ul>
+          <ul class="box portfolio-insights">
+            <li class="link_name">Aspectos Destacados del Portafolio:</li>
+            <li><a href="#">Proyectos Recientes</a></li>
+            <li><a href="#">Feedback de Clientes</a></li>
+            <li><a href="#">Logros y Reconocimientos</a></li>
+            <li><a href="#">Herramientas y Tecnologías</a></li>
+        </ul>
+        
+        <ul class="box input-box contact-me">
+            <li class="link_name">¿Quieres Comunicarte?</li>
+            <li><input type="text" placeholder="Déjame tu mensaje"></li>
+            <li><input type="button" value="Enviar Mensaje"></li>
+        </ul>
         </div>
       </div>
-    </section>
-    <script>
-      var cursor = document.querySelector(".cursor");
-      var cursor2 = document.querySelector(".cursor2");
-      document.addEventListener("mousemove", function(e){
-        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-      });
-    </script>
+
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023 <a href="#">DM.</a>All rights reserved</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
 </body>
 </html>
 
