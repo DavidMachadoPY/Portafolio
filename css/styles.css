@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@800&family=Rajdhani:wght@500&family=Roboto+Mono&family=Signika+Negative:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Unbounded:wght@900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -31,11 +30,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 40px;
+    padding: 16px 30px;
   }
+
+    .abrirMenu,
+    .cerrarMenu {
+      display: none;
+    }
+
+
 
     /* Contenedor de la foto y nombre del header */
     .header__logo-container {
+      width: 70%;
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -47,7 +54,7 @@ body {
           height: 50px;
           border-radius: 50px;
           overflow: hidden;
-          margin-right: 18px;
+          margin: 18px 20px;
           border: #00e0c2 solid;
         }
 
@@ -64,7 +71,7 @@ body {
         .header__logo-sub {
           width: 170px;
           height: 30px;
-          font-size: 17px;
+          font-size: small;
           text-transform: uppercase;
           font-weight: 900;
           letter-spacing: 1px;
@@ -145,10 +152,12 @@ body {
           }
 
               /* Logo de la de cada section */
-              .material-symbols-outlined {
+              .hlogo {
                 margin-right: 8px;
                 font-size: 20px;
               }
+
+/* ---------- SECCION #2 -------------*/
 
 /* Diseños pagina principal */
 .sec__primary {
@@ -169,7 +178,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     width: 60%;
-    height: 90%;
+    height: 85%;
   }
     .home__content {
       width: 90%;
@@ -266,7 +275,7 @@ body {
         border-radius: 3px;
         box-shadow: 0 0 20px #00e0c265;
         /* Incrementé el desenfoque a 20px para hacer la sombra más pronunciada */
-        font-weight: 200;
+        font-weight: 500;
         letter-spacing: 1px;
       }
 
@@ -280,10 +289,10 @@ body {
       /* Icono animado que indica la accion de scroll Margen*/
       .contain__scroll {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 8%;
+        height: 15%
       }
 
       /* Icono animado que indica la accion de scroll Centro*/
@@ -316,6 +325,14 @@ body {
               opacity: 0.5;
               top: 25px;
           }
+        }
+
+        .textScroll {
+          color: white;
+          font-size: 15px;
+          font-family: 'Inconsolata', monospace;
+          margin: 10px 10px;
+          letter-spacing: 1px;
         }
 
     /* Contenedor de iconos de resdes y enrutamiento */
@@ -364,7 +381,7 @@ body {
           justify-content: center;
         }
 
-@media (max-width: 953px) {
+@media (max-width: 900px) {
   .home {
     width: 100%;
     height: 85%;
@@ -372,6 +389,110 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .cerrarMenu,
+  .abrirMenu {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .cerrar,
+  .menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  .home__social {
+    display: none;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: last baseline;
+  }
+
+  .header__logo-sub {
+    width: 65%;
+  }
+
+  .cerrarMenu,
+  .abrirMenu {
+    display: block;
+  }
+
+  .cerrarMenu {
+    margin: 20px 10px;
+  } 
+
+  .header__links {
+    opacity: 1;
+    visibility: visible;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    position: absolute; /* Cambiado a 'absolute' para posicionar en relación al padre */
+    top: 0%;           /* Porcentaje para posicionar desde arriba */
+    left: 0%;          /* Porcentaje para posicionar desde la izquierda */
+    height: 100vh; 
+    padding: 3.5rem 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); /* Si deseas mantener la sombra basada en vmax */
+    width: 65%;      /* Ancho deseado para el elemento, puedes ajustar según tus necesidades */
+    z-index: 1000;     /* Ajusta el z-index si es necesario */
+    background: rgb(28, 28, 38, 0.7);
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.37);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgb(255, 255, 255, 0.18);
+    overflow-y: hidden;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .header__links.invisible {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header__links li {
+    width: 90%;
+    color: #ececec60;
+    padding-bottom: 8px;
+  }
+
+  .header__links li a {
+    width: 100%;
+    color: #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1em;
+    font-size: large;
+    border-radius: 0.8em;
+    transition: 0.5s;
+  }
+
+  .header__links li a:hover {
+    background: #d11bac;
+    color: #fff;
+  }
+  
   .h-primary {
     font-size: 20px;
     text-align: center;
@@ -449,8 +570,8 @@ body {
   border: 8px solid #03caafad;
   border-radius: 50%;
   opacity: 0.5;
-  top: 4%;
-  left: 5%;
+  top: 0%;
+  left: 0%;
   transform: translate(-40%, -45%);
   animation: cursorAnim2 1s infinite alternate;
 }

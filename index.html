@@ -12,8 +12,13 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__content">
+      
+      <div class="abrirMenu"><span class="material-symbols-outlined menu">
+        menu
+        </span></div>
+      
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
           <img src="img/photo__perfil.jpeg" alt="David Alexander Machado Alzate Logo Image"
@@ -22,46 +27,47 @@
         <span class="header__logo-sub">David M. Alzate</span>
       </div>
       <div class="header__main">
-        <ul class="header__links">
+        
+        <ul class="header__links invisible">
+          <button class="cerrarMenu"><span class="material-symbols-outlined cerrar">
+            close
+          </span></button>
           <li class="header__link-wrapper">
-            <a href="./" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined">
+            <a href="" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined hlogo">
               home
               </span>Home
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./#about" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined">
+            <a href="#about" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined hlogo">
               person
               </span>About
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./#projects" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined">
+            <a href="#projects" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined  hlogo">
               business_center
               </span>Projects 
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./#contact" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined">
+            <a href="#contact" class="header__link" class= "link__proyect">
+              <span class="material-symbols-outlined hlogo">
               alternate_email
               </span>Contact
             </a>
           </li>
         </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
       </div>
     </div>
   </header>
+
   <div class="cursor"></div>
   <div class="cursor2"></div>
+
   <section class="sec__primary">
     <div class="home">
       <div class="home__content">
@@ -115,10 +121,12 @@
     <div class="home__lineEmail">avidmachado@gmail.com</div> -->
 
     <div class="contain__scroll">
-      <div class="scroll-icon"></div>
+      <a href="./#about"><div class="scroll-icon"></div></a>
+      <div class="textScroll">Descrume mas!</div>
     </div>
     
   </section>
+
   <section id="about" class="about sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
@@ -165,6 +173,7 @@
       </div>
     </div>
   </section>
+
   <section id="projects" class="projects sec-pad">
     <div class="projects-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
