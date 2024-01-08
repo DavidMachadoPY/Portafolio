@@ -12,52 +12,63 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
+  <!-- Encabezado principal de la página -->
   <header class="header" id="header">
     <div class="header__content">
       
-      <div class="abrirMenu"><span class="material-symbols-outlined menu">
-        menu
-        </span></div>
+      <!-- Elemento para abrir el menú (considera usar un icono en lugar de texto para mejor claridad) -->
+      <div class="abrirMenu">
+        <span class="material-symbols-outlined menu">menu</span>
+      </div>
       
+      <!-- Contenedor del logo y nombre del sitio -->
       <div class="header__logo-container">
+        
+        <!-- Contenedor de la imagen del logo -->
         <div class="header__logo-img-cont">
-          <img src="img/photo__perfil.jpeg" alt="David Alexander Machado Alzate Logo Image"
-            class="header__logo-img" />
+          <img src="img/photo__perfil.jpeg" alt="David Alexander Machado Alzate Logo Image" class="header__logo-img" />
         </div>
+        
+        <!-- Nombre del propietario del sitio -->
         <span class="header__logo-sub">David M. Alzate</span>
       </div>
+      
+      <!-- Contenedor principal de los enlaces de navegación -->
       <div class="header__main">
         
+        <!-- Lista de enlaces de navegación (considera usar una estructura <nav> en lugar de <ul>) -->
         <ul class="header__links invisible">
-          <button class="cerrarMenu"><span class="material-symbols-outlined cerrar">
-            close
-          </span></button>
+          
+          <!-- Botón para cerrar el menú (considera moverlo a un lugar más lógico) -->
+          <button class="cerrarMenu">
+            <span class="material-symbols-outlined cerrar">close</span>
+          </button>
+          
+          <!-- Enlace a la página principal -->
           <li class="header__link-wrapper">
-            <a href="" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined hlogo">
-              home
-              </span>Home
+            <a href="" class="header__link" class="link__proyect">
+              <span class="material-symbols-outlined hlogo">home</span>Home
             </a>
           </li>
+          
+          <!-- Enlace a la sección 'Acerca de mí' -->
           <li class="header__link-wrapper">
-            <a href="#about" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined hlogo">
-              person
-              </span>About
+            <a href="#about" class="header__link" class="link__proyect">
+              <span class="material-symbols-outlined hlogo">person</span>About
             </a>
           </li>
+          
+          <!-- Enlace a la sección 'Proyectos' -->
           <li class="header__link-wrapper">
-            <a href="#projects" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined  hlogo">
-              business_center
-              </span>Projects 
+            <a href="#projects" class="header__link" class="link__proyect">
+              <span class="material-symbols-outlined hlogo">business_center</span>Projects
             </a>
           </li>
+          
+          <!-- Enlace a la sección 'Contacto' -->
           <li class="header__link-wrapper">
-            <a href="#contact" class="header__link" class= "link__proyect">
-              <span class="material-symbols-outlined hlogo">
-              alternate_email
-              </span>Contact
+            <a href="#contact" class="header__link" class="link__proyect">
+              <span class="material-symbols-outlined hlogo">alternate_email</span>Contact
             </a>
           </li>
         </ul>
@@ -65,100 +76,141 @@
     </div>
   </header>
 
+  <!-- Dos contenedores para el efecto de cursor -->
   <div class="cursor"></div>
   <div class="cursor2"></div>
 
+  <!-- Sección principal de la página -->
   <section class="sec__primary">
+    <!-- Contenedor principal de la sección de inicio -->
     <div class="home">
+      <!-- Contenido principal de la sección de inicio -->
       <div class="home__content">
+        <!-- Encabezado de nivel 3 con una clase específica -->
         <h3 class="h-primary">Hi, my name is
+          <!-- Comentario para un elemento no utilizado -->
           <!-- <div class="orb yel"></div> -->
         </h3>
+        <!-- Contenedor para el nombre del usuario y su descripción -->
         <div class="home__name">
+          <!-- Encabezado de nivel 2 con una clase específica -->
           <h2 class="h-secondary">David Machado</h2>
+          <!-- Encabezado de nivel 2 con texto específico y una clase -->
           <h2 class="text-primary">Creating digital solutions for a profound human impact.</h2>
         </div>
-        
+        <!-- Contenedor para la información adicional o descripción -->
         <div class="home__info">
+          <!-- Párrafo con una clase específica para el texto secundario -->
           <p class="text-secondary">
             My passion lies in designing exceptional software that drives real change. I see technology as a vehicle to sow positive impacts, backed by a deep sense of empathy and purpose.
           </p>
         </div>
-        
       </div>
+      <!-- Botón con una clase específica para dirigir a los proyectos -->
       <button type="button" class="home__button">Checkout my projects!</button>
     </div>
+    
+    <!-- Contenedor para los enlaces de redes sociales -->
     <div class="home__socials">
+      <!-- Primer enlace de red social (LinkedIn) -->
       <div class="home__social">
-        <a href="https://linkedin.com/in/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer"
-          target="_blank" class= "link__proyect">
-          <img src="img/icon-linkedin.png" alt="David Machado Linkedin Profile"
-            class="home__social-icon" />
+        <a href="https://linkedin.com/in/" class="home__social-icon-link" rel="noreferrer" target="_blank">
+          <img src="img/icon-linkedin.png" alt="David Machado Linkedin Profile" class="home__social-icon" />
         </a>
       </div>
+      <!-- Segundo enlace de red social (Twitter) -->
       <div class="home__social">
-        <a href="https://twitter.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+        <a href="https://twitter.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
           <img src="img/icon-twitter.png" alt="David Machado Twitter Profile" class="home__social-icon" />
         </a>
       </div>
+      <!-- Tercer enlace de red social (YouTube) -->
       <div class="home__social">
-        <a href="https://www.youtube.com/" class="home__social-icon-link home__social-icon-link--bd-none" rel="noreferrer" target="_blank" class= "link__proyect">
+        <a href="https://www.youtube.com/" class="home__social-icon-link home__social-icon-link--bd-none" rel="noreferrer" target="_blank">
           <img src="img/icon-youtube.png" alt="David Machado Youtube Channel" class="home__social-icon" />
         </a>
       </div>
+      <!-- Cuarto enlace de red social (GitHub) -->
       <div class="home__social">
-        <a href="https://github.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+        <a href="https://github.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
           <img src="img/icon-github.png" alt="David Machado Github Profile" class="home__social-icon" />
         </a>
       </div>
-
+      <!-- Quinto enlace de red social (Instagram) -->
       <div class="home__social">
-        <a href="https://instagram.com/" class="home__social-icon-link" class= "link__proyect" rel="noreferrer" target="_blank" class= "link__proyect">
+        <a href="https://instagram.com/" class="home__social-icon-link" rel="noreferrer" target="_blank">
           <img src="img/icon-instagram.png" alt="David Machado Profile" class="home__social-icon" />
         </a>
       </div>
     </div>
 
-    <!-- <div class="home__line"></div>
-    <div class="home__lineEmail">avidmachado@gmail.com</div> -->
-
+    <!-- Contenedor para el icono de scroll y texto asociado -->
     <div class="contain__scroll">
-      <a href="./#about"><div class="scroll-icon"></div></a>
+      <!-- Enlace que lleva a la sección 'about' -->
+      <a href="./#about">
+        <!-- Icono para el scroll -->
+        <div class="scroll-icon"></div>
+      </a>
+      <!-- Texto relacionado con el scroll -->
       <div class="textScroll">Descrume mas!</div>
     </div>
-    
   </section>
 
+  <!-- Sección "About" para mostrar información personal y habilidades.
+    El identificador es "about" y la clase es "about sec-pad" -->
   <section id="about" class="about sec-pad">
+
+    <!-- Contenedor principal para centrar el contenido -->
     <div class="main-container">
+      
+      <!-- Título principal de la sección "About Me" -->
       <h2 class="heading heading-sec heading-sec__mb-med">
+        <!-- Título principal -->
         <span class="heading-sec__main">About Me</span>
+        <!-- Subtítulo o descripción -->
         <span class="heading-sec__sub">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology
         </span>
       </h2>
+
+      <!-- Contenido principal de la sección "About" -->
       <div class="about__content">
+        
+        <!-- Sección para presentar detalles sobre el autor -->
         <div class="about__content-main">
           
+          <!-- Título de la sección de detalles -->
           <h3 class="about__content-title">Get to know me!</h3>
+          
+          <!-- Detalles y descripción del autor -->
           <div class="about__content-details">
-
+            <!-- Párrafos con información sobre el autor -->
             <p class="about__content-details-para">
-                I'm a Junior Developer with an <strong>intermediate-advanced</strong> proficiency in <strong>Python</strong> and a solid foundation in <strong>Java</strong>. My focus revolves around data structures like <strong>linked lists</strong>, <strong>trees</strong>, and <strong>graphs</strong>, along with <strong>sorting</strong> and <strong>searching</strong> algorithms.
+              <!-- Información sobre habilidades de programación -->
+              I'm a Junior Developer with an <strong>intermediate-advanced</strong> proficiency in <strong>Python</strong> and a solid foundation in <strong>Java</strong>. My focus revolves around data structures like <strong>linked lists</strong>, <strong>trees</strong>, and <strong>graphs</strong>, along with <strong>sorting</strong> and <strong>searching</strong> algorithms.
               <br><br>
-                In the realm of <strong>Front-end</strong> development, I've honed skills in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, ensuring appealing and functional interfaces. I've been involved in various <strong>projects</strong> showcasing my expertise and creativity in this domain.
+              <!-- Información sobre desarrollo Front-end -->
+              In the realm of <strong>Front-end</strong> development, I've honed skills in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, ensuring appealing and functional interfaces. I've been involved in various <strong>projects</strong> showcasing my expertise and creativity in this domain.
               <br><br>
-                Open to <strong>job opportunities</strong> where I can contribute, learn, and grow. If you believe my profile aligns with your needs, please don't hesitate to <strong>contact me</strong>.
+              <!-- Información sobre oportunidades laborales -->
+              Open to <strong>job opportunities</strong> where I can contribute, learn, and grow. If you believe my profile aligns with your needs, please don't hesitate to <strong>contact me</strong>.
               <br><br>
+              <!-- Botón para contactar -->
               <a href="./#contact" class="btn">Contact</a>
-            
+            </p>
           </div>     
         </div>
 
+        <!-- Sección para mostrar habilidades del autor -->
         <div class="about__content-skills">
+          <!-- Título de la sección de habilidades -->
           <h3 class="about__content-title"><strong>My Skills</strong></h3>
+          
+          <!-- Contenedor para listar habilidades -->
           <div class="skills">
+            <!-- Lista de habilidades en forma de etiquetas -->
+            <!-- Cada habilidad se representa con un div con clase "skills__skill" -->
             <div class="skills__skill"><strong>Python</strong></div>
             <div class="skills__skill"><strong>Django</strong></div>
             <div class="skills__skill"><strong>JavaScript</strong></div>
@@ -177,146 +229,188 @@
     </div>
   </section>
 
+  <!-- Sección de proyectos con identificador 'projects' y clases 'projects sec-pad' -->
   <section id="projects" class="projects sec-pad">
+    
+    <!-- Contenedor principal de proyectos -->
     <div class="projects-container">
+      
+      <!-- Encabezado con el título y subtítulo de la sección -->
       <h2 class="heading heading-sec heading-sec__mb-med">
+        <!-- Título principal -->
         <span class="heading-sec__projects">My Recent Proyects</span>
+        <!-- Subtítulo explicativo -->
         <span class="heading-sec__subProjects">
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
+          Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
         </span>
       </h2>
-        <section class="card-container">
-          
-          <!-- Genera divs para cada celda del grid -->
-          <a href="https://davidmachadopy.github.io/Login_Instagram/" target="_blank" class= "link__proyect"> 
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/card_ig_op4.jfif);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">INSTAGRAM</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/shopping__Car.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">CAR SHOP</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://davidmachadopy.github.io/Macondo/" target="_blank" class= "link__proyect"> 
+      
+      <!-- Contenedor para tarjetas de proyectos -->
+      <section class="card-container">
+        
+        <!-- Tarjeta 1: Proyecto Instagram -->
+        <a href="https://davidmachadopy.github.io/Login_Instagram/" target="_blank" class="link__proyect">
           <div class="card">
-            <div class="card-background" style="background-image: url(img/macondo__op1.jpeg);">
+            <div class="card-background" style="background-image: url(img/card_ig_op4.jfif);">
               <div class="content">
                 <div class="card-category">David</div>
-                <h3 class="card-heading">MACONDO</h3>
+                <h3 class="card-heading">INSTAGRAM</h3>
               </div>
             </div>
           </div>
-          </a>
-          <a href="https://davidmachadopy.github.io/Formulario/" target="_blank" class= "link__proyect"> 
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/form.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">FORM</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://davidmachadopy.github.io/Hogwarts/" target="_blank" class= "link__proyect"> 
+        </a>
+        <!-- Tarjeta 2: Proyecto Car Shop -->
+        <a href="#">
           <div class="card">
-            <div class="card-background" style="background-image: url(img/hogwarts__op5.jpeg);">
+            <div class="card-background" style="background-image: url(img/shopping__Car.jpeg);">
               <div class="content">
                 <div class="card-category">David</div>
-                <h3 class="card-heading">HOGWARTS</h3>
+                <h3 class="card-heading">CAR SHOP</h3>
               </div>
             </div>
           </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/CV.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">HOJA DE VIDA</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://davidmachadopy.github.io/PetPaws/" target="_blank" class= "link__proyect"> 
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/PetPaws.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">PET PAWS</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/notes__avarage.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">NOTAS AVARAGE</h3>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://davidmachadopy.github.io/KFC/" target="_blank" class= "link__proyect"> 
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/KFC__op2.jpg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">KFC HTML</h3>
-                </div>
-              </div>
-            </div>
         </a>
-          <a href="https://davidmachadopy.github.io/Login/" target="_blank" class= "link__proyect"> 
-            <div class="card">
-              <div class="card-background" style="background-image: url(img/login.jpeg);">
-                <div class="content">
-                  <div class="card-category">David</div>
-                  <h3 class="card-heading">LOGIN</h3>
-                </div>
+        <!-- Tarjeta 3: Proyecto Macondo -->
+        <a href="https://davidmachadopy.github.io/Macondo/" target="_blank" class= "link__proyect"> 
+        <div class="card">
+          <div class="card-background" style="background-image: url(img/macondo__op1.jpeg);">
+            <div class="content">
+              <div class="card-category">David</div>
+              <h3 class="card-heading">MACONDO</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <!-- Tarjeta 4: Proyecto Form -->
+        <a href="https://davidmachadopy.github.io/Formulario/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/form.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">FORM</h3>
               </div>
             </div>
+          </div>
         </a>
-        </section>
-  </section>
+        <!-- Tarjeta 5: Proyecto Hogwarts -->
+        <a href="https://davidmachadopy.github.io/Hogwarts/" target="_blank" class= "link__proyect"> 
+        <div class="card">
+          <div class="card-background" style="background-image: url(img/hogwarts__op5.jpeg);">
+            <div class="content">
+              <div class="card-category">David</div>
+              <h3 class="card-heading">HOGWARTS</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <!-- Tarjeta 6: Proyecto Hoja de Vida -->
+        <a href="#">
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/CV.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">HOJA DE VIDA</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Tarjeta 7: Proyecto Pet Paws -->
+        <a href="https://davidmachadopy.github.io/PetPaws/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/PetPaws.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">PET PAWS</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Tarjeta 8: Proyecto Notas Avarage -->
+        <a href="#">
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/notes__avarage.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">NOTAS AVARAGE</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Tarjeta 9: Proyecto KFC HTML -->
+        <a href="https://davidmachadopy.github.io/KFC/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/KFC__op2.jpg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">KFC HTML</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Tarjeta 10: Proyecto Login -->
+        <a href="https://davidmachadopy.github.io/Login/" target="_blank" class= "link__proyect"> 
+          <div class="card">
+            <div class="card-background" style="background-image: url(img/login.jpeg);">
+              <div class="content">
+                <div class="card-category">David</div>
+                <h3 class="card-heading">LOGIN</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section> <!-- Fin del contenedor de tarjetas -->
+    
+    </div> <!-- Fin del contenedor principal de proyectos -->
+    
+  </section> <!-- Fin de la sección de proyectos -->
 
+  <!-- Inicio del contenedor para las ondas -->
   <div class="containerWaves">
+    
+    <!-- Contenedor de las ondas -->
     <div class="waves">
+      
+      <!-- Cuatro divs que representan las ondas, cada uno con un ID único -->
       <div class="wave" id="wave1"></div>
       <div class="wave" id="wave2"></div>
       <div class="wave" id="wave3"></div>
       <div class="wave" id="wave4"></div>
-    </div>
-  </div>
+    
+    </div> <!-- Fin del contenedor de ondas -->
+  </div> <!-- Fin del contenedor de ondas -->
 
+  <!-- Inicio del pie de página -->
   <footer>
-  
+    
+    <!-- Contenedor principal del pie de página -->
     <div class="contentFooter">
-
+      
+      <!-- Contenedor de cajas de enlaces -->
       <div class="link-boxes">
+        
+        <!-- Primera caja de enlaces -->
         <ul class="box">
+          
+          <!-- Nombre de la sección -->
           <li class="link_name">Introduction and Presentation:</li>
+          
+          <!-- Lista de enlaces relacionados -->
           <li><a href="#">Introduction</a></li>
           <li><a href="#">Carrer Overview</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Objectives</a></li>
           <li><a href="#">Vision</a></li>
           <li><a href="#">Who I Am</a></li>
-        </ul>
+        
+        </ul> <!-- Fin de la primera caja de enlaces -->
+        
+        <!-- Segunda caja de enlaces -->
         <ul class="box">
+          
+          <!-- Nombre de la sección -->
           <li class="link_name">Projects and Experience:</li>
+          
+          <!-- Lista de enlaces relacionados -->
           <li><a href="#">Featured Projects</a></li>
           <li><a href="#">Case Studies</a></li>
           <li><a href="#">Themes</a></li>
@@ -325,9 +419,16 @@
           <li><a href="#">Professional Experience</a></li>
           <li><a href="#">Previous Roles</a></li>
           <li><a href="#">Contributions</a></li>
-        </ul>
+        
+        </ul> <!-- Fin de la segunda caja de enlaces -->
+        
+        <!-- Tercera caja de enlaces -->
         <ul class="box">
+          
+          <!-- Nombre de la sección -->
           <li class="link_name">Contact and Other Elements:</li>
+          
+          <!-- Lista de enlaces relacionados -->
           <li><a href="#">Contact Information</a></li>
           <li><a href="#">Social Media</a></li>
           <li><a href="#">Contact Form</a></li>
@@ -335,32 +436,55 @@
           <li><a href="#">Certifications</a></li>
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">Recommendations</a></li>
-        </ul>
+        
+        </ul> <!-- Fin de la tercera caja de enlaces -->
+        
+        <!-- Cuarta caja de enlaces -->
         <ul class="box portfolio-insights">
+          
+          <!-- Nombre de la sección -->
           <li class="link_name">Aspectos Destacados del Portafolio:</li>
+          
+          <!-- Lista de enlaces relacionados -->
           <li><a href="#">Proyectos Recientes</a></li>
           <li><a href="#">Feedback de Clientes</a></li>
           <li><a href="#">Logros y Reconocimientos</a></li>
           <li><a href="#">Herramientas y Tecnologías</a></li>
-        </ul>
         
+        </ul> <!-- Fin de la cuarta caja de enlaces -->
+        
+        <!-- Caja de formulario de contacto -->
         <ul class="box input-box contact-me">
-            <li class="link_name">¿Quieres Comunicarte?</li>
-            <li><input type="text" placeholder="Déjame tu mensaje"></li>
-            <li><input type="button" value="Enviar Mensaje"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footerButtom">
-      <div class="textCopyR">Copyright c 2024 Designies | All rights reserved.</div>
-      <div class="textPT">Terms and Condition    ~    Privacy Policy  </div>
-    </div>
-
+          
+          <!-- Nombre de la sección -->
+          <li class="link_name">¿Quieres Comunicarte?</li>
+          
+          <!-- Campo de entrada para el mensaje -->
+          <li><input type="text" placeholder="Déjame tu mensaje"></li>
+          
+          <!-- Botón para enviar el mensaje -->
+          <li><input type="button" value="Enviar Mensaje"></li>
+        
+        </ul> <!-- Fin de la caja de formulario de contacto -->
+      
+      </div> <!-- Fin del contenedor de cajas de enlaces -->
     
+    </div> <!-- Fin del contenedor principal del pie de página -->
+    
+    <!-- Contenedor inferior del pie de página -->
+    <div class="footerButtom">
+      
+      <!-- Texto de derechos de autor -->
+      <div class="textCopyR">Copyright c 2024 Designies | All rights reserved.</div>
+      
+      <!-- Enlaces de términos y condiciones y política de privacidad -->
+      <div class="textPT">Terms and Condition  ~  Privacy Policy  </div>
+    
+    </div> <!-- Fin del contenedor inferior del pie de página -->
 
-  </footer>
-</body>
-</html>
+  </footer> <!-- Fin del pie de página -->
+</body> <!-- Cierre de la etiqueta body -->
+</html> <!-- Cierre de la etiqueta html -->
+
 
 

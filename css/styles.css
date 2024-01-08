@@ -1,176 +1,182 @@
+/* Importación de múltiples fuentes de Google Fonts. Considerar si todas estas fuentes son necesarias. */
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Unbounded:wght@900&display=swap');
+
+/* Estilos globales para todos los elementos */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;               /* Elimina el relleno predeterminado */
+  margin: 0;                /* Elimina el margen predeterminado */
+  box-sizing: border-box;   /* Garantiza que el tamaño total incluya el relleno y el borde */
 }
 
+/* Estilos para el cuerpo de la página */
 body {
-    box-sizing: border-box;
-    position: relative;
-    font-family: sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: black;
+  box-sizing: border-box;   /* Manteniendo el box-sizing para el cuerpo */
+  position: relative;       /* Posición relativa para el cuerpo */
+  font-family: sans-serif;  /* Establecer una fuente predeterminada */
+  font-family: 'Source Sans Pro', sans-serif; /* Considerar mantener una única fuente */
+  background-color: black;  /* Fondo negro para el cuerpo */
 }
 
+/* ----------------------------------- */
+/*                HEADER               */
+/* ----------------------------------- */
+
+/* Estilos para el encabezado */
 .header {
-  width: 100%;
-  background: #040e1b86;
-  box-shadow: 0 0 20px #00e0c265;
-  position: fixed;
-  /* Fijar el header */
-  top: 0;
-  /* Lo posiciona en la parte superior */
-  z-index: 1000;
-  /* Establecer un índice z alto para superponerse a otros elementos */
+  width: 100%;              /* Ancho completo */
+  background: #040e1b86;    /* Fondo con cierto grado de transparencia */
+  box-shadow: 0 0 20px #00e0c265; /* Sombra al encabezado */
+  position: fixed;          /* Encabezado fijo en la parte superior */
+  top: 0;                   /* Posición en la parte superior */
+  z-index: 1000;            /* Establecer un índice z alto */
 }
-  /* Contenedor del contenido del Header */
+
+  /* Contenido dentro del encabezado */
   .header__content {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 30px;
+    height: 80px;             /* Altura fija del contenido */
+    display: flex;            /* Diseño flexible */
+    align-items: center;      /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 16px 30px;       /* Relleno interno */
   }
 
+    /* Estilo para el botón de menú cerrado y abierto */
     .abrirMenu,
     .cerrarMenu {
-      display: none;
+        display: none;            /* Inicialmente oculto */
     }
 
-
-
-    /* Contenedor de la foto y nombre del header */
+    /* Contenedor del logo del encabezado */
     .header__logo-container {
-      width: 70%;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      transition: color .3s;
+      width: 70%;               /* Ancho del contenedor */
+      display: flex;            /* Diseño flexible */
+      align-items: center;      /* Centrar verticalmente */
+      cursor: pointer;          /* Cursor al pasar por encima */
+      transition: color .3s;    /* Transición de color */
     }
-        /* Contenedot de la imagen del logo */
-        .header__logo-img-cont {
-          width: 50px;
-          height: 50px;
-          border-radius: 50px;
-          overflow: hidden;
-          margin: 18px 20px;
-          border: #00e0c2 solid;
+
+      /* Estilo para la imagen del logo del encabezado */
+      .header__logo-img-cont {
+        width: 50px;              /* Ancho de la imagen del logo */
+        height: 50px;             /* Altura de la imagen del logo */
+        border-radius: 50px;      /* Borde redondeado */
+        overflow: hidden;         /* Oculta el contenido excedente */
+        margin: 18px 20px;        /* Margen exterior */
+        border: #00e0c2 solid;    /* Borde sólido */
+      }
+
+        /* Estilo para la imagen del logo */
+        .header__logo-img {
+          width: 100%;              /* Ancho completo */
+          height: 100%;             /* Altura completa */
+          object-fit: cover;        /* Cubrir el contenedor */
+          object-position: center;  /* Centrar la imagen */
+          display: block;           /* Bloque de visualización */
         }
 
-            /* Foto del logo */
-            .header__logo-img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-              display: block;
-            }
+      /* Contenedor del nombre en el logo del encabezado */
+      .header__logo-sub {
+        width: 170px;             /* Ancho del contenedor del nombre */
+        height: 30px;             /* Altura del contenedor del nombre */
+        font-size: small;         /* Tamaño de fuente pequeño */
+        text-transform: uppercase; /* Transformación a mayúsculas */
+        font-weight: 900;         /* Peso de la fuente */
+        letter-spacing: 1px;      /* Espaciado entre letras */
+        background-color: #00e0c2; /* Fondo con color específico */
+        font-family: 'Signika Negative', sans-serif; /* Fuente específica */
+        display: flex;            /* Diseño flexible */
+        align-items: center;      /* Centrar verticalmente */
+        justify-content: center;  /* Centrar horizontalmente */
+      }
 
-        /* Contenedor de del nombre en el logo */
-        .header__logo-sub {
-          width: 170px;
-          height: 30px;
-          font-size: small;
-          text-transform: uppercase;
-          font-weight: 900;
-          letter-spacing: 1px;
-          background-color: #00e0c2;
-          font-family: 'Signika Negative', sans-serif;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+      /* Hover para el contenedor del nombre en el logo */
+      .header__logo-sub:hover {
+        color: #ffffff;           /* Cambio de color al pasar el mouse */
+        transition: color .3s;    /* Transición de color */
+      }
 
-        .header__logo-sub:hover {
-          color: #ffffff;
-          transition: color .3s;
-        }
+      /* Contenedor principal para el menú hamburguesa */
+      .header__main-ham-menu-cont {
+        display: none;            /* Inicialmente oculto */
+        width: 3rem;              /* Ancho específico */
+        padding: 2.2rem 0;        /* Relleno específico */
+      }
 
-        /* Contenedor de padre de los link */
-        .header__main-ham-menu-cont {
-          display: none;
-          width: 3rem;
-          padding: 2.2rem 0;
+        /* Contenedor para los enlaces del encabezado */
+        .header__links {
+          display: flex;            /* Diseño flexible */
         }
 
-        /* Contenedor de links de enrutamiento */
-        .header__links{
-          display: flex;
-        }
-
-        /* Contenedor de cada link */
-        .header__link-wrapper {
-          list-style: none;
-        }
-
-        /* Links que enrutan cada section */
-        .header__link {
-            display: flex;
-            padding: 2px 30px;
-            font-size: 15px;
-            color: #00e0c2;
-            text-transform: uppercase;
-            font-family: 'Signika Negative', sans-serif;
-            letter-spacing: 1px;
-            font-weight: 700;
-            transition: color .3s;
-            position: relative;
-            /* Añadido para que el ::after se posicione correctamente */
-        }
-
-        .header__link::after {
-          content: '';
-          position: absolute;
-          /* Cambiado de absolute a relative */
-          background-color: #03caae;
-          height: 3px;
-          width: 0;
-          left: 50%;
-          /* Centra la línea horizontalmente */
-          bottom: -5px;
-          transform: translateX(-50%);
-          /* Ajusta para centrar correctamente */
-          transition: width 0.3s;
-        }
-        
-        .header__link:hover::after {
-          width: 70%;
-        }
-        
-        .header__link:hover {
-          color: #ffffff;
-          transition: color .3s;
-          font-size: 18px;
-        }
-
-          /* Etiqueta a que enruta a las secciones */
-          a {
-            position: relative;
-            text-decoration: none;
-            padding: 0 10px;
+          /* Contenedor para cada enlace del encabezado */
+          .header__link-wrapper {
+            list-style: none;         /* Sin estilos de lista */
           }
 
-              /* Logo de la de cada section */
-              .hlogo {
-                margin-right: 8px;
-                font-size: 20px;
-              }
+          /* Estilo para los enlaces del encabezado */
+          .header__link {
+            display: flex;            /* Diseño flexible */
+            padding: 2px 30px;        /* Relleno específico */
+            font-size: 15px;          /* Tamaño de fuente */
+            color: #00e0c2;           /* Color específico */
+            text-transform: uppercase; /* Transformación a mayúsculas */
+            font-family: 'Signika Negative', sans-serif; /* Fuente específica */
+            letter-spacing: 1px;      /* Espaciado entre letras */
+            font-weight: 700;         /* Peso de la fuente */
+            transition: color .3s;    /* Transición de color */
+            position: relative;       /* Posición relativa */
+          }
 
-/* ---------- SECCION #2 -------------*/
+          /* Estilos generales para todas las etiquetas 'a' (enlaces) */
+          a {
+            position: relative;       /* Posición relativa para posicionar elementos hijos */
+            text-decoration: none;    /* Elimina el subrayado predeterminado */
+            padding: 0 10px;          /* Espaciado horizontal en los enlaces */
+          }
 
-/* Diseños pagina principal */
+            /* Estilos para el logo dentro de cada sección */
+            .hlogo {
+              margin-right: 8px;        /* Margen derecho para separación */
+              font-size: 20px;          /* Tamaño de fuente para el logo */
+            }
+
+          /* Pseudo-elemento para añadir una línea decorativa debajo de los enlaces del encabezado */
+          .header__link::after {
+            content: '';              /* Añade contenido al pseudo-elemento */
+            position: absolute;       /* Posición absoluta para ubicarlo específicamente */
+            background-color: #03caae; /* Color de la línea */
+            height: 3px;              /* Altura de la línea */
+            width: 0;                 /* Ancho inicial de la línea (inicia invisible) */
+            left: 50%;                /* Posiciona en el centro horizontal del enlace */
+            bottom: -5px;             /* Posiciona 5px por debajo del borde inferior del enlace */
+            transform: translateX(-50%); /* Ajusta para centrar correctamente */
+            transition: width 0.3s;   /* Efecto de transición para la anchura de la línea */
+          }
+
+          /* Efecto al pasar el mouse por encima del enlace del encabezado */
+          .header__link:hover::after {
+            width: 70%;               /* Ancho aumentado al pasar el mouse */
+          }
+
+          /* Efecto al pasar el mouse por encima del enlace del encabezado */
+          .header__link:hover {
+            color: #ffffff;           /* Cambia el color del texto al pasar el mouse */
+            transition: color .3s;    /* Efecto de transición para el cambio de color */
+            font-size: 18px;          /* Cambia el tamaño del texto al pasar el mouse */
+          }
+
+/* ----------------------------------- */
+/*                HOME                 */
+/* ----------------------------------- */
+
+/* Estilo para la sección principal de la página */
 .sec__primary {
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  background-image: url('https://github.com/DavidMachadoPY/Portafolio/blob/main/img/home__wallpaper_LIFo.jpg?raw=true');
-  background-size: cover;
-  /* Hace zoom out (la imagen será el 50% de su tamaño original) */
-  background-position: center center;
-  /* Centra la imagen */
+  width: 100%;                       /* Ancho completo de su contenedor */
+  height: 100vh;                     /* Altura del 100% de la ventana visible */
+  margin: 0 auto;                    /* Centrar horizontalmente */
+  background-image: url('https://github.com/DavidMachadoPY/Portafolio/blob/main/img/home__wallpaper_LIFo.jpg?raw=true'); /* URL de la imagen de fondo */
+  background-size: cover;            /* Ajustar la imagen de fondo al tamaño del contenedor */
+  background-position: center center; /* Centrar la imagen de fondo */
 }
-
 
   /* .orb {
     animation: spin 2s linar infinite;
@@ -194,215 +200,250 @@ body {
       10px 0 80px #f55;
   } */
 
-  /* Diseño del contenedor padre de la info tipo text */
+  /* Estilo para el contenedor principal de la página de inicio */
   .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 60%;
-    height: 85%;
+    display: flex;                     /* Mostrar como un flex container */
+    flex-direction: column;            /* Apilar elementos en columna */
+    justify-content: center;           /* Centrar verticalmente */
+    margin: 0 auto;                    /* Centrar horizontalmente */
+    width: 60%;                        /* Ancho del 60% de su contenedor */
+    height: 85%;                       /* Altura del 85% de su contenedor */
   }
+
+    /* Contenedor del textto */
     .home__content {
       width: 90%;
     }
 
-    /* h3 de la primera linea de texto */
-    .h-primary {
-      color: #03caae;
-      font-size: 20px;
-      letter-spacing: 3px;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 400;
-      margin-top: 125px;
-    }
-    
+      /* ----------------------------------- */
+      /*        ESTILOS PARA TEXTO           */
+      /* ----------------------------------- */
 
-    /* Contenedor del nombre y tercera linea de texto */
-    .home__name {
-      margin: 10px 0px 12px 0px;
-    }
-
-      /* Contenedor del nombre */
-      .h-secondary {
-        font-family: 'Roboto Mono', monospace;
-        color: #cad7f8;
-        font-size: 60px;
-        letter-spacing: 3px;
-        width: 100%;
-        margin-bottom: 10px;
+      /* Estilo para el título primario */
+      .h-primary {
+        color: #03caae;                    /* Color del texto */
+        font-size: 20px;                   /* Tamaño de fuente */
+        letter-spacing: 3px;               /* Espaciado entre letras */
+        font-family: 'Rajdhani', sans-serif; /* Fuente */
+        font-weight: 400;                  /* Peso de la fuente */
+        margin-top: 125px;                 /* Margen superior */
       }
 
-      /* Tercera linea de texto la que esat con colores */
+      /* Estilo para el contenedor del nombre */
+      .home__name {
+        margin: 10px 0px 12px 0px;         /* Margen superior, derecho, inferior e izquierdo */
+      }
+
+      /* Estilo para el nombre secundario */
+      .h-secondary {
+        font-family: 'Roboto Mono', monospace; /* Fuente */
+        color: #cad7f8;                    /* Color del texto */
+        font-size: 60px;                   /* Tamaño de fuente */
+        letter-spacing: 3px;               /* Espaciado entre letras */
+        width: 100%;                       /* Ancho completo de su contenedor */
+        margin-bottom: 10px;               /* Margen inferior */
+      }
+
+      /* Estilo para la tercera línea de texto con gradientes */
       .text-primary {
+        /* Variables personalizadas */
         --k: 0;
+        
+        /* Propiedades de fuente y tamaño */
         width: 100%;
         font-family: 'Roboto Mono', monospace;
-        color: transparent; /* Hacemos el texto transparente para mostrar el gradiente */
         font-size: 42px;
-        background: #000c40d0; /* Fondo con color azul oscuro con transparencia */
-        border-radius: 5px;
-        backdrop-filter: blur(4px); /* Efecto de desenfoque en el fondo */
+        
+        /* Propiedades para el gradiente y efecto de texto */
+        color: transparent;
+        background: #000c40d0;
+        backdrop-filter: blur(4px);
         background: linear-gradient(90deg, hsl(calc(var(--k) * 360), 95%, 65%), hsl(calc(var(--k) * 360 + 90), 95%, 65%));
         -webkit-background-clip: text;
         background-clip: text;
+        
+        /* Animación */
         animation: k 4s linear infinite;
       }
 
-        /* Bloque de colido que permite darle diferentes colores de manera estatica */
-        @property --k {
-          syntax: "<number>";
-          initial-value: 0;
-          inherits: false;
-        }
-
-        /* Animacion que le da movimiento al color */
-        @keyframes k {
-          0% {
-              --k: 0;
-          }
-          100% {
-              --k: 1;
-          }
-        }
-      
-      /* Contenedor del parrafo con la descripcion pricipal ultima linea de texto */
-      .home__info {
-        width: 100%;
-        letter-spacing: 1px;
+      /* Bloque de color que permite darle diferentes colores de manera estática */
+      @property --k {
+        syntax: "<number>";
+        initial-value: 0;
+        inherits: false;
       }
 
-        /* Parrafo con la descripcion pricipal ultima linea de texto */
-        .text-secondary {
-          width: 80%;
-          font-family: 'Signika Negative', sans-serif;
-          color: #ffd04e;
-          background-color: #000c4085;
-          border-radius: 5px;
-          backdrop-filter: blur(4px);
-          padding: 10px 10px;
-          position: relative;
-          z-index: 1;
+      /* Animacion que le da movimiento al color */
+      @keyframes k {
+        0% {
+            --k: 0;
         }
-      
-      /* Diseño del boton que en ruta a ver los proyecto */
-      .home__button {
-        margin-top: 30px;
-        width: 35%;
-        height: 50px;
-        background-color: transparent;
-        border: 1px #00e0c2 solid;
-        color: #03caae;
-        font-family: 'Rajdhani', sans-serif;
-        font-size: large;
-        border-radius: 3px;
-        box-shadow: 0 0 20px #00e0c265;
-        /* Incrementé el desenfoque a 20px para hacer la sombra más pronunciada */
-        font-weight: 500;
-        letter-spacing: 1px;
-      }
-
-        .home__button:hover {
-          background-color: #008f7c;
-          /* Cambiamos el color de fondo cuando se pasa el cursor sobre el botón */
-          color: #ffffff;
-          /* Cambiamos el color del texto para asegurarnos de que sea legible con el nuevo color de fondo */
+        100% {
+            --k: 1;
         }
-
-      /* Icono animado que indica la accion de scroll Margen*/
-      .contain__scroll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 4%
       }
+            
+    /* Contenedor del parrafo con la descripcion pricipal ultima linea de texto */
+    .home__info {
+      width: 100%;
+      letter-spacing: 1px;
+    }
 
-      /* Icono animado que indica la accion de scroll Centro*/
-      .scroll-icon {
-        width: 20px;
-        height: 40px;
-        border: 2px solid #00ffdd;
-        border-radius: 60px;
+      .text-secondary {
+        /* Estilos específicos para el texto secundario */
+        width: 80%;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 16px;
+        color: #ffd04e;
+        background-color: #000c4085;
+        border-radius: 5px;
+        backdrop-filter: blur(4px);
+        padding: 10px;
         position: relative;
+        z-index: 1;
       }
 
-        .scroll-icon::after {
-          position: absolute;
-          top: 30%;
-          width: 7px;
-          height: 8px;
-          content: '';
-          background-color: #03caae;
-          left: calc(50% - 3px);
-          border-radius: 10px;
-          animation: scroll-icon 1.2s infinite;
-        }
+    /* ----------------------------------- */
+    /*        ESTILOS PARA BOTÓN           */
+    /* ----------------------------------- */
 
-        @keyframes scroll-icon {
-          0% {
-              top: 8%;
-          }
+    .home__button {
+      /* Estilos base para el botón */
+      margin-top: 30px;
+      width: 35%;
+      height: 50px;
+      background-color: transparent;
+      border: 1px #00e0c2 solid;
+      color: #03caae;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: large;
+      border-radius: 3px;
+      box-shadow: 0 0 20px #00e0c265;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
 
-          100% {
-              opacity: 0.5;
-              top: 25px;
-          }
-        }
+    .home__button:hover {
+      /* Estilos cuando el cursor está sobre el botón */
+      background-color: #008f7c;
+      color: #ffffff;
+    }
 
-        .textScroll {
-          color: white;
-          font-size: 15px;
-          font-family: 'Inconsolata', monospace;
-          margin: 10px 10px;
-          letter-spacing: 1px;
-        }
+/* ----------------------------------- */
+/*     ESTILOS PARA ICONO DE SCROLL    */
+/* ----------------------------------- */
 
-    /* Contenedor de iconos de resdes y enrutamiento */
-      .home__socials {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-360%);
-        background: #000c40;
-        box-shadow: 0 0 20px #00e0c25e;
-        /* Incrementé el desenfoque a 20px para hacer la sombra más pronunciada */
-        padding: 0.5rem;
-        border-radius: 0 10px 10px 0;
+.contain__scroll {
+  /* Contenedor del icono de scroll */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+  .scroll-icon {
+    /* Icono de scroll */
+    width: 20px;
+    height: 40px;
+    border: 2px solid #00ffdd;
+    border-radius: 60px;
+    position: relative;
+  }
+
+    .scroll-icon::after {
+      /* Efecto de movimiento para el icono de scroll */
+      position: absolute;
+      top: 30%;
+      width: 7px;
+      height: 8px;
+      content: '';
+      background-color: #03caae;
+      left: calc(50% - 3px);
+      border-radius: 10px;
+      animation: scroll-icon 1.2s infinite;
+    }
+
+    @keyframes scroll-icon {
+      /* Animación para el icono de scroll */
+      0% {
+        top: 8%;
+      }
+      100% {
+        opacity: 0.5;
+        top: 25px;
+      }
+    }
+
+  .textScroll {
+    color: white;
+    font-size: 15px;
+    font-family: 'Inconsolata', monospace;
+    margin: 10px 10px;
+    letter-spacing: 1px;
+  }
+
+/* Contenedor de iconos de resdes y enrutamiento */
+.home__socials {
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-360%);
+background: #000c40;
+box-shadow: 0 0 20px #00e0c25e;
+/* Incrementé el desenfoque a 20px para hacer la sombra más pronunciada */
+padding: 0.5rem;
+border-radius: 0 10px 10px 0;
+}
+
+  /* Contenedor de cada uno de los iconos */
+  .home__social {
+  width: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+    /* Enrutaminto */
+    .home__social-icon-link {
+      width: 90%;
+      padding: 1rem;
+      transition: background .3s;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+      /* Iconos */
+      .home__social-icon {
+        width: 25px;
+        color: #03caae;
+        transition: transform 0.3s ease;
       }
 
-      /* Contenedor de cada uno de los iconos */
-      .home__social {
-        width: 2.8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      .home__social-icon:hover {
+        transform: scale(1.3) rotate(15deg);
+        ;
       }
 
-        /* Iconos */
-        .home__social-icon {
-          width: 25px;
-          color: #03caae;
-          transition: transform 0.3s ease;
-        }
+      /* .home__line {
+        height: 120px;
+        width: 1px;
+        transform: translateY(-50%);
+        background: #8693b2;
+      }
 
-        .home__social-icon:hover {
-          transform: scale(1.3) rotate(15deg);
-          ;
-        }
-
-        /* Enrutaminto */
-        .home__social-icon-link {
-          width: 90%;
-          padding: 1rem;
-          transition: background .3s;
-          border-radius: 5px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
+      .home__lineEmail {
+        font-size: 12px;
+        transform: translateY(-155%);
+        writing-mode: vertical-lr;
+        color: #8693b2;
+        font-family: 'Rajdhani', sans-serif;
+        letter-spacing: 1px;
+      } */
 
 @media (max-width: 900px) {
   .home {
@@ -548,231 +589,220 @@ body {
   }
 
 }
-    /* .home__line {
-      height: 120px;
-      width: 1px;
-      transform: translateY(-50%);
-      background: #8693b2;
-    }
+    
+/* ----------------------------------- */
+/*               CURSOR               */
+/* ----------------------------------- */
 
-    .home__lineEmail {
-      font-size: 12px;
-      transform: translateY(-155%);
-      writing-mode: vertical-lr;
-      color: #8693b2;
-      font-family: 'Rajdhani', sans-serif;
-      letter-spacing: 1px;
-    } */
-
-.sec__secondary {
-  width: 100%;
-  height: 800px;
-}
-
-/* ------------ CURSOR --------------- */
-
+/* Estilo principal del cursor */
 .cursor {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #00e0c2;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: .14s;
-  animation: cursorScale 1s infinite alternate;
-  box-shadow: #00e0c2;
-  z-index: 9999;
+  position: fixed;              /* Fija la posición del elemento en la pantalla. */
+  width: 30px;                  /* Ancho del cursor. */
+  height: 30px;                 /* Altura del cursor. */
+  border: 1px solid #00e0c2;    /* Borde sólido con un color específico. */
+  border-radius: 50%;           /* Hace que el cursor tenga forma circular. */
+  left: 0;                      /* Posiciona el cursor al extremo izquierdo. */
+  top: 0;                       /* Posiciona el cursor en la parte superior. */
+  pointer-events: none;         /* Evita que el cursor interfiera con eventos del mouse. */
+  transform: translate(-50%, -50%); /* Mueve el cursor en relación a su centro. */
+  transition: .14s;             /* Añade una transición suave para cambios en el cursor. */
+  animation: cursorScale 1s infinite alternate; /* Aplica una animación de escala al cursor. */
+  box-shadow: #00e0c2;          /* Añade una sombra al cursor con un color específico. */
+  z-index: 9999;               /* Determina el orden de apilamiento del cursor sobre otros elementos. */
 }
 
+/* Efecto adicional del cursor */
 .cursor::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  border: 8px solid #03caafad;
-  border-radius: 50%;
-  opacity: 0.5;
-  top: 0%;
-  left: 0%;
-  transform: translate(-40%, -45%);
-  animation: cursorAnim2 1s infinite alternate;
+  content: '';                 /* Inserta contenido después del cursor. */
+  width: 12px;                 /* Ancho del elemento después del cursor. */
+  height: 12px;                /* Altura del elemento después del cursor. */
+  position: absolute;          /* Posición absoluta en relación con el cursor. */
+  border: 8px solid #03caafad; /* Borde sólido con un color específico. */
+  border-radius: 50%;          /* Hace que el elemento tenga forma circular. */
+  opacity: 0.5;                /* Define la opacidad del elemento. */
+  top: 0%;                     /* Posiciona el elemento al extremo superior del cursor. */
+  left: 0%;                    /* Posiciona el elemento al extremo izquierdo del cursor. */
+  transform: translate(-40%, -45%); /* Mueve el elemento en relación a su centro. */
+  animation: cursorAnim2 1s infinite alternate; /* Aplica una animación de escala al elemento. */
 }
 
+/* Animación para el efecto adicional del cursor */
 @keyframes cursorAnim2 {
   from {
-      transform: scale(1.5);
+    transform: scale(1.5);     /* Escala inicial del elemento. */
   }
-
   to {
-      transform: scale(.6);
+    transform: scale(.6);      /* Escala final del elemento. */
   }
 }
 
+/* Estilo para un segundo tipo de cursor */
 .cursor2 {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  background-color: #00e0c2;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: .1s;
-  z-index: 9999;
+  position: fixed;             /* Fija la posición del elemento en la pantalla. */
+  width: 8px;                  /* Ancho del segundo cursor. */
+  height: 8px;                 /* Altura del segundo cursor. */
+  background-color: #00e0c2;   /* Color de fondo del segundo cursor. */
+  border-radius: 50%;          /* Hace que el segundo cursor tenga forma circular. */
+  left: 0;                     /* Posiciona el segundo cursor al extremo izquierdo. */
+  top: 0;                      /* Posiciona el segundo cursor en la parte superior. */
+  pointer-events: none;        /* Evita que el segundo cursor interfiera con eventos del mouse. */
+  transform: translate(-50%, -50%); /* Mueve el segundo cursor en relación a su centro. */
+  transition: .1s;             /* Añade una transición suave para cambios en el segundo cursor. */
+  z-index: 9999;               /* Determina el orden de apilamiento del segundo cursor sobre otros elementos. */
 }
 
-/* ----------------------------- */
+/* ----------------------------------- */
+/*            SECCION ABOUT            */
+/* ----------------------------------- */
 
-/* ------------ ABOUT ----------- */
-
+/* Estilos generales para la sección 'About' */
 .about {
-  width: 100%;
-  height: auto;
-  background-color: #482d7a;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
-  background-image: url(../img/wallpaperAbout.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  width: 100%;                       /* Ancho completo */
+  height: auto;                      /* Altura automática */
+  background-color: #482d7a;         /* Color de fondo */
+  margin: 0 auto;                    /* Margen automático horizontal */
+  font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
+  background-image: url(../img/wallpaperAbout.jpg); /* Imagen de fondo */
+  background-repeat: no-repeat;      /* No repetir la imagen */
+  background-attachment: fixed;      /* Fijar la imagen al scroll */
+  background-size: cover;            /* Ajustar la imagen de fondo */
 }
 
+/* Contenedor principal */
 .main-container {
-  width: 80%;
-  height: 100%;
-  padding: 60px 60px;
-  background-color: #0d1042;
-  margin: 0 auto;
-  
+  width: 80%;                        /* Ancho del 80% */
+  height: 100%;                      /* Altura completa */
+  padding: 60px 60px;                /* Espaciado interno */
+  background-color: #0d1042;         /* Color de fondo */
+  margin: 0 auto;                    /* Margen automático horizontal */
 }
 
+/* Espaciado inferior para el título secundario */
 .heading-sec__mb-med {
-  margin-bottom: 40px;
+  margin-bottom: 40px;               /* Margen inferior */
 }
 
+/* Estilos para el título principal */
 .heading-sec__main {
-  display: block;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  letter-spacing: 3px;
-  text-align: center;
-  margin-bottom: 45px;
-  position: relative;
-  color: #ffffff;
+  display: block;                    /* Mostrar como bloque */
+  font-size: 30px;                   /* Tamaño de fuente */
+  text-transform: uppercase;         /* Convertir a mayúsculas */
+  letter-spacing: 3px;               /* Espaciado entre letras */
+  text-align: center;                /* Alineación al centro */
+  margin-bottom: 45px;               /* Margen inferior */
+  position: relative;                /* Posición relativa */
+  color: #ffffff;                    /* Color del texto */
 }
 
+/* Línea decorativa después del título principal */
 .heading-sec__main::after {
-  content: '';
-  position: absolute;
-  top: calc(100% + 1.5rem);
-  height: 5px;
-  width: 30px;
-  background: #00ffdd;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
+  content: '';                       /* Contenido vacío */
+  position: absolute;                /* Posición absoluta */
+  top: calc(100% + 1.5rem);          /* Posicionamiento */
+  height: 5px;                       /* Altura */
+  width: 30px;                       /* Ancho */
+  background: #00ffdd;               /* Color de fondo */
+  left: 50%;                         /* Posicionamiento */
+  transform: translateX(-50%);       /* Centrar horizontalmente */
+  border-radius: 5px;                /* Borde redondeado */
 }
 
+/* Estilos para el subtítulo */
 .heading-sec__sub {
-  width: 80%;
-  display: block;
-  text-align: center;
-  color: #cad7f8;
-  font-size: 16px;
-  font-weight: 500;
-  margin: auto;
-  line-height: 1.6;
+  width: 80%;                        /* Ancho del 80% */
+  display: block;                    /* Mostrar como bloque */
+  text-align: center;                /* Alineación al centro */
+  color: #cad7f8;                    /* Color del texto */
+  font-size: 16px;                   /* Tamaño de fuente */
+  font-weight: 500;                  /* Peso de fuente */
+  margin: auto;                      /* Margen automático horizontal */
+  line-height: 1.6;                  /* Altura de línea */
 }
 
+/* Contenido organizado en cuadrícula */
 .about__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
+  display: grid;                     /* Disposición en cuadrícula */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  grid-gap: 5rem;                    /* Espaciado entre elementos */
 }
 
+/* Estilo para el título dentro del contenido */
 .about__content-title {
-  margin-bottom: 20px;
-  font-weight: 200;
-  font-size: 18px;
-  color: #00ffdd;
+  margin-bottom: 20px;               /* Margen inferior */
+  font-weight: 200;                  /* Peso de fuente */
+  font-size: 18px;                   /* Tamaño de fuente */
+  color: #00ffdd;                    /* Color del texto */
 }
 
+/* Estilo para el contenido principal */
 .about__content-main {
-  height: 100%;
+  height: 100%;                      /* Altura completa */
 }
 
+/* Estilo para los detalles del contenido */
 .about__content-details {
-  height: 100%;
+  height: 100%;                      /* Altura completa */
 }
 
+/* Estilo para los párrafos dentro de los detalles */
 .about__content-details-para {
-  
-  height: 20%;
-  font-size: 15px;
-  color: #858585;
-  line-height: 1.7;
-
+  height: 20%;                       /* Altura del 20% */
+  font-size: 15px;                   /* Tamaño de fuente */
+  color: #858585;                    /* Color del texto */
+  line-height: 1.7;                  /* Altura de línea */
 }
 
+/* Estilo para el texto en negrita */
 strong {
-  color: #24ccb6;
+  color: #24ccb6;                    /* Color específico */
 }
 
+/* Estilo para el botón */
 .btn {
-  background: #008f7c;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
-  font-size: 15px;
-  padding: 12px 60px;
+  background: #008f7c;              /* Color de fondo */
+  color: #fff;                       /* Color del texto */
+  text-transform: uppercase;         /* Convertir a mayúsculas */
+  letter-spacing: 1px;               /* Espaciado entre letras */
+  font-weight: 700;                  /* Peso de fuente */
+  border-radius: 5px;                /* Borde redondeado */
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15); /* Sombra */
+  font-size: 15px;                   /* Tamaño de fuente */
+  padding: 12px 60px;                /* Relleno */
 }
 
+/* Estilos generales para enlaces */
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none;             /* Sin decoración de enlace */
+  color: inherit;                    /* Heredar color */
 }
 
-.link__proyect {
-  display: block; /* o 'display: inline-block;' si lo prefieres */
-  width: 100%;    /* Ajusta al ancho completo del contenedor */
-  height: 100%;   /* Ajusta al alto completo del contenedor */
-  margin: 0;
-  padding: 0;
+/* Estilos para ciertos enlaces específicos */
+.link__proyect, .link__proyectFooter {
+  display: block;                    /* Mostrar como bloque */
+  width: 100%;                       /* Ancho completo */
+  height: 100%;                      /* Altura completa */
+  margin: 0;                         /* Sin margen */
+  padding: 0;                        /* Sin relleno */
 }
 
-.link__proyectFooter {
-  display: block; /* o 'display: inline-block;' si lo prefieres */
-  width: 100%;    /* Ajusta al ancho completo del contenedor */
-  height: 100%;   /* Ajusta al alto completo del contenedor */
-  margin: 0;
-  padding: 0;
-}
-
+/* Estilo para el contenedor de habilidades */
 .skills {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;                     /* Disposición en fila */
+  flex-wrap: wrap;                   /* Envolver elementos */
 }
 
+/* Estilo para cada habilidad en la lista */
 .skills__skill {
-  padding: 10px 20px;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  font-size: 14px;
-  background: #000c40;
-  border-radius: 5px;
-  font-weight: 600;
-  color: #00ffdd;
-  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;                /* Espaciado interno */
+  margin-bottom: 12px;               /* Margen inferior */
+  margin-right: 12px;                /* Margen derecho */
+  font-size: 14px;                   /* Tamaño de fuente */
+  background: #000c40;               /* Color de fondo */
+  border-radius: 5px;                /* Borde redondeado */
+  font-weight: 600;                  /* Peso de fuente */
+  color: #00ffdd;                    /* Color del texto */
+  font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
 }
-
 
 @media (max-width: 900px) {
 
@@ -806,197 +836,218 @@ a {
   }
 }
 
+/* ----------------------------------- */
+/*          SECCION PROJECTS           */
+/* ----------------------------------- */
+
+/* Estilos para el contenedor de proyectos */
 .projects {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
+  width: 100%;                      /* Ancho completo */
+  height: 100%;                     /* Altura completa */
+  background-color: #ffffff;        /* Fondo blanco */
+  margin: 0 auto;                   /* Margen automático para centrar horizontalmente */
+  font-family: 'Montserrat', sans-serif; /* Fuente */
 }
 
+/* Estilos para el contenedor interno de proyectos */
 .projects-container {
-  width: 100%;
-  height: 100%;
-  background-color: #0d1042;
-  padding: 40px 40px;
+  width: 100%;                      /* Ancho completo */
+  height: 100%;                     /* Altura completa */
+  background-color: #0d1042;        /* Fondo con un tono azul oscuro */
+  padding: 40px 40px;               /* Espaciado interno */
 }
 
+/* Estilos para el título principal de proyectos */
 .heading-sec__projects {
-  height: 90px;
-  display: block;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  letter-spacing: 3px;
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 10px;
-  position: relative;
-  color: #ffffff;
+  height: 90px;                     /* Altura específica */
+  display: block;                   /* Se muestra como bloque */
+  font-size: 30px;                  /* Tamaño de fuente */
+  text-transform: uppercase;        /* Transforma el texto a mayúsculas */
+  letter-spacing: 1px;              /* Espaciado entre letras */
+  text-align: center;               /* Alineación centrada */
+  padding: 20px;                    /* Espaciado interno */
+  margin-bottom: 10px;              /* Margen inferior */
+  position: relative;               /* Posición relativa para elementos secundarios */
+  color: #ffffff;                   /* Color del texto */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Estilos para el subtítulo de proyectos */
 .heading-sec__subProjects {
-  display: block;
-  text-align: center;
-  color: #cad7f8;
-  font-size: 16px;
-  font-weight: 500;
-  margin: auto;
-  line-height: 1.6;
-  width: 80%;
+  /* Estilos para la descripción secundaria */
+  display: block;                   
+  text-align: center;               
+  color: #cad7f8;                   
+  font-size: 16px;                  
+  font-weight: 500;                 
+  margin: auto;                     
+  line-height: 1.6;                 
+  width: 80%;                       
 }
 
+/* Estilos para el contenedor de tarjetas */
 .card-container {
-  display: grid;
-  width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
-  /* 4 columnas */
-  gap: 10px;
-  /* Espacio entre celdas */
+  /* Estilos para el contenedor de tarjetas */
+  display: grid;                    
+  width: 100%;                      
+  margin: 0 auto;                   
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 25px;                        /* Espacio entre celdas */
 }
 
+/* Estilos para cada tarjeta individual */
 .card {
-  height: 180px;
-  width: 100%;
-  padding: 20px;
-  /* Espaciado interno */
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  list-style: none;
-  transition: .3s ease;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  justify-content: end;
-  margin: 0 auto;
+  height: 180px;                    
+  width: 100%;                      
+  padding: 20px;                    
+  position: relative;               
+  text-align: center;               
+  background-size: cover;           
+  list-style: none;                 
+  transition: .3s ease;             
+  display: flex;                    
+  flex-direction: row;              
+  align-items: end;                 
+  justify-content: end;             
+  margin: 0 auto;                   
 }
 
+/* Pseudoelemento ::before para la tarjeta */
 .card::before {
-  content: "";
-  width: 100%;
-  background-repeat: no-repeat;
+  content: "";                      
+  width: 100%;                      
+  background-repeat: no-repeat;     
 }
 
-/* Estilo adicional para hacerlo responsive */
+/* Estilos para el fondo de la tarjeta */
+.card-background {
+  position: absolute;               
+  /* Estilos para el fondo de la tarjeta */
+  bottom: 0;                        
+  right: 0;                         
+  left: 0;                          
+  top: 0;                           
+  border-radius: 20px;              
+  background-size: 350px;           
+  background-position: center;       
+  filter: brightness(.90) saturate(1.5) contrast(1); /* Ajustes de filtro */
+  transform-origin: bottom;         
+  transform: scale(1) translateZ(0); 
+  transition: .3s ease;             
+  background-repeat: no-repeat;     
+}
+
+/* Estilos para las tarjetas al no estar en hover */
+.card-container .card:not(:hover) {
+  transform: scale(.9);             
+  background-repeat: no-repeat;     
+}
+
+/* Estilos para el efecto hover en las tarjetas */
+.card:hover .card-background {
+  transform: scale(1.15) translateZ(0);
+  background-size: 300px;           
+}
+
+/* Estilos para el contenido dentro de la tarjeta */
+.content {
+  padding: 25px;                    
+}
+
+/* Estilos para la categoría dentro de la tarjeta */
+.card-category {
+  /* Estilos para la categoría dentro de la tarjeta */
+  color: black;                     
+  font-size: 12px;                  
+  font-weight: 900;                 
+  letter-spacing: 5px;              
+  margin-bottom: 8px;               
+  text-transform: uppercase;        
+}
+
+/* Estilos para el encabezado dentro de la tarjeta */
+.card-heading {
+  /* Estilos para el encabezado dentro de la tarjeta */
+  width: 100%;                      
+  height: 60px;                     
+  display: flex;                    
+  align-items: center;              
+  justify-content: center;          
+  letter-spacing: 2px;              
+  font-size: 16px;                  
+  text-align: center;               
+  color: #00e0c2;                   
+  border-top: 3px #00e0c2 solid;    
+  border-bottom: 3px #00e0c2 solid; 
+  text-shadow: 0 0 25px #00e0c2 ;    
+  transition: transform 0.5s;       
+  font-family: 'Unbounded', sans-serif; /* Fuente alternativa */
+  backdrop-filter: blur(15px);       
+  filter: saturate(130%) brightness(78%) contrast(300%); /* Ajustes de filtro */
+}
+
+/* Estilos responsivos para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
   .card-container {
-      grid-template-columns: repeat(2, 1fr);
-      /* 2 columnas para dispositivos más pequeños */
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para dispositivos medianos */
   }
 }
 
 @media (max-width: 480px) {
   .card-container {
-      grid-template-columns: 1fr;
-      /* Una sola columna para dispositivos aún más pequeños */
+      grid-template-columns: 1fr;           /* Una sola columna para dispositivos pequeños */
   }
 }
 
-.card-background {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  border-radius: 20px;
-  background-size: 350px;
-  background-position: center;
-  filter: brightness(.90) saturate(1.5) contrast(1);
-  transform-origin: bottom;
-  transform: scale(1) translateZ(0);
-  transition: .3s ease;
-  background-repeat: no-repeat;
-}
+/* ----------------------------------- */
+/*               FOOTER                */
+/* ----------------------------------- */
 
-.card-container .card:not(:hover) {
-  transform: scale(.9);
-  background-repeat: no-repeat;
-}
-
-.card-container:hover>.card:not(:hover) .card-background,
-.card-container:hover>.card:not(:hover) .card-category {
-  filter: brightness(.6) saturate(1) contrast(1.2) blur(5px);
-  background-repeat: no-repeat;
-}
-
-.card:hover .card-background {
-  transform: scale(1.15) translateZ(0);
-  background-size: 300px;
-}
-
-.content {
-  padding: 25px;
-}
-
-.card-category {
-  color: black;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.card-heading {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 2px;
-  font-size: 16px;
-  text-align: center;
-  color: #00e0c2;
-  border-top: 3px #00e0c2 solid;
-  border-bottom: 3px #00e0c2 solid;
-  text-shadow: 0 0 25px #00e0c2 ;
-  transition: transform 0.5s;
-  font-family: 'Unbounded', sans-serif;
-  backdrop-filter: blur(15px);
-  filter: saturate(130%) brightness(78%) contrast(300%);
-}
-
+/* Estilos generales para el pie de página */
 footer {
-  width: 100%;
-  background-color: #1ed7c4;
-  min-height: 100px;
+  width: 100%; /* Ancho completo del contenedor */
+  background-color: #1ed7c4; /* Color de fondo */
+  min-height: 100px; /* Altura mínima para el pie de página */
 }
 
+/* Contenedor para las olas */
 .containerWaves {
-  position: relative; /* Esto es importante para posicionar las olas relativas a este contenedor */
-  width: 100%;
-  height: 100px; /* Altura deseada para las olas */
-  background-color: #0d1042;
-  overflow: hidden; /* Esto asegura que las olas que se salgan del contenedor se oculten */
+  position: relative; /* Posiciona las olas relativas al contenedor */
+  width: 100%; /* Ancho completo */
+  height: 100px; /* Altura fija para las olas */
+  background-color: #0d1042; /* Color de fondo */
+  overflow: hidden; /* Oculta las partes de las olas que se extienden fuera del contenedor */
 }
 
+/* Contenedor principal para las ondas */
 .waves {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%; /* Ajusta según sea necesario */
+  position: relative; /* Posiciona las ondas relativas a su contenedor */
+  top: 0; /* Posición inicial desde arriba */
+  left: 0; /* Posición inicial desde la izquierda */
+  width: 200%; /* Doble del ancho para la animación de las ondas */
+  height: 100%; /* Altura fija */
 }
 
+/* Estilos base para cada onda */
 .wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100px;
-  background: url(../img/wave.png);
-  background-size: 1000px 100px;
+  position: absolute; /* Posición absoluta para las olas */
+  top: 0; /* Posición inicial desde arriba */
+  left: 0; /* Posición inicial desde la izquierda */
+  width: 50%; /* Cada onda ocupa la mitad del contenedor */
+  height: 100px; /* Altura fija para las olas */
+  background: url(../img/wave.png); /* Imagen de fondo para las olas */
+  background-size: 1000px 100px; /* Tamaño de la imagen de fondo */
 }
 
- .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWave 4s linear infinite;
+/* Propiedades para la primera onda */
+.wave#wave1 {
+  z-index: 1000; /* Índice z para superposición */
+  opacity: 1; /* Opacidad completa */
+  bottom: 0; /* Posición desde abajo */
+  animation: animateWave 4s linear infinite; /* Animación para la primera onda */
 }
 
+/* Propiedades para la segunda onda */
 .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
@@ -1004,6 +1055,7 @@ footer {
   animation: animateWave_02 4s linear infinite;
 }
 
+/* Propiedades para la tercera onda */
 .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
@@ -1011,6 +1063,7 @@ footer {
   animation: animateWave 3s linear infinite;
 }
 
+/* Propiedades para la cuarta onda */
 .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
@@ -1018,15 +1071,17 @@ footer {
   animation: animateWave_02 3s linear infinite;
 }
 
+/* Keyframes para animar la primera onda */
 @keyframes animateWave {
   0% {
-    background-position-x: 1000px;
+    background-position-x: 1000px; /* Posición inicial de la animación */
   }
   100% {
-    background-position-x: 0px;
+    background-position-x: 0px; /* Posición final de la animación */
   }
 }
 
+/* Keyframes para animar la segunda y cuarta onda */
 @keyframes animateWave_02 {
   0% {
     background-position-x: 0px;
@@ -1034,160 +1089,211 @@ footer {
   100% {
     background-position-x: 1000px;
   }
-} 
-
-.footerSocials {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
+/* Estilos para los enlaces de redes sociales */
 .footerSocials {
-  gap: 20px;
+  display: flex; /* Mostrar como flexbox */
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin relleno */
+  margin: 0; /* Sin margen */
+  gap: 20px; /* Espaciado entre elementos */
 }
 
+/* Estilos para los enlaces dentro de .footerSocials */
 .footerSocials a {
-  font-size: 24px;
+  font-size: 24px; /* Tamaño de fuente para los íconos de redes sociales */
 }
 
-.footerLinks {
-  gap: 10px;
-}
-
+/* Estilos para los enlaces legales */
 .legal {
-  font-size: 12px;
-  margin: 0;
+  font-size: 12px; /* Tamaño de fuente para el texto legal */
+  margin: 0; /* Sin margen */
 }
 
+/* Estilos para el contenido principal del pie de página */
 footer .contentFooter {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: 10px 40px ;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  margin: auto; /* Margen automático */
+  padding: 10px 40px; /* Relleno interior */
+  position: relative; /* Posición relativa */
+  top: 0px; /* Posición desde arriba */
+  left: 0px; /* Posición desde la izquierda */
 }
 
+/* Estilos para la sección superior dentro del contenido del pie de página */
 footer .contentFooter .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  display: flex; /* Mostrar como flexbox */
+  align-items: center; /* Alinear elementos verticalmente */
+  justify-content: space-between; /* Espaciado entre elementos */
+  margin-bottom: 50px; /* Margen inferior */
 }
 
+/* Estilos para el contenedor de enlaces */
 footer .contentFooter .link-boxes {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap : 10px
+  width: 100%; /* Ancho completo */
+  display: flex; /* Mostrar como flexbox */
+  justify-content: space-between; /* Espaciado entre elementos */
+  gap: 10px; /* Espaciado entre elementos */
 }
 
+/* Estilos para el nombre de los enlaces */
 .contentFooter .link-boxes .box .link_name {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  position: relative;
+  color: #fff; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: 400; /* Peso de la fuente */
+  margin-bottom: 10px; /* Margen inferior */
+  position: relative; /* Posición relativa */
 }
 
+/* Estilos para el subrayado del nombre del enlace */
 .link-boxes .box .link_name::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  height: 2px;
-  width: 50%;
-  background: #fff;
+  content: ''; /* Contenido vacío */
+  position: absolute; /* Posición absoluta */
+  left: 0; /* Posición desde la izquierda */
+  bottom: -2px; /* Posición desde abajo */
+  height: 2px; /* Altura del subrayado */
+  width: 50%; /* Ancho del subrayado */
+  background: #fff; /* Color del subrayado */
 }
 
+/* Estilos para los elementos de la lista dentro del contenedor de enlaces */
 .contentFooter .link-boxes .box li {
-  margin: 6px 0;
-  list-style: none;
+  margin: 6px 0; /* Margen vertical */
+  list-style: none; /* Sin viñetas */
 }
 
+/* Estilos para los enlaces dentro del contenedor de enlaces */
 .contentFooter .link-boxes .box li a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: all 0.4s ease
+  color: #fff; /* Color del texto */
+  font-size: 14px; /* Tamaño de fuente */
+  font-weight: 400; /* Peso de la fuente */
+  text-decoration: none; /* Sin decoración de texto */
+  opacity: 0.8; /* Opacidad del enlace */
+  transition: all 0.4s ease; /* Transición suave */
 }
 
+/* Estilos para los enlaces cuando se pasa el mouse por encima */
 .contentFooter .link-boxes .box li a:hover {
-  opacity: 1;
-  text-decoration: underline;
+  opacity: 1; /* Opacidad completa */
+  text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
+/* Estilos para el contenedor de entrada de texto */
 .contentFooter .link-boxes .input-box {
-  margin-right: 55px;
+  margin-right: 55px; /* Margen derecho */
 }
 
+/* Estilos para el campo de entrada */
 .link-boxes .input-box input {
-  height: 40px;
-  width: calc(100% + 55px);
-  outline: none;
-  border: 2px solid #AFAFB6;
-  background: #008f7c;
-  border-radius: 4px;
-  padding: 0 15px;
-  font-size: 15px;
-  color: #fff;
-  margin-top: 5px;
+  height: 40px; /* Altura del campo de entrada */
+  width: calc(100% + 55px); /* Ancho del campo de entrada */
+  outline: none; /* Sin contorno */
+  border: 2px solid #AFAFB6; /* Borde del campo de entrada */
+  background: #008f7c; /* Color de fondo del campo de entrada */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 0 15px; /* Relleno interior */
+  font-size: 15px; /* Tamaño de fuente */
+  color: #fff; /* Color del texto */
+  margin-top: 5px; /* Margen superior */
 }
 
+/* Estilos para el texto de marcador de posición del campo de entrada */
 .link-boxes .input-box input::placeholder {
-  color: #AFAFB6;
-  font-size: 16px;
+  color: #AFAFB6; /* Color del texto de marcador de posición */
+  font-size: 16px; /* Tamaño de fuente */
 }
 
+/* Estilos para el botón dentro del contenedor de entrada */
 .link-boxes .input-box input[type="button"] {
-  background: #fff;
-  color: #008f7c;
-  border: none;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 4px 0;
-  opacity: 0.8;
-  cursor: pointer;
-  transition: all 0.4s ease;
+  background: #fff; /* Color de fondo del botón */
+  color: #008f7c; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: 500; /* Peso de la fuente */
+  margin: 4px 0; /* Margen vertical */
+  opacity: 0.8; /* Opacidad del botón */
+  cursor: pointer; /* Cursor al pasar por encima */
+  transition: all 0.4s ease; /* Transición suave */
 }
 
+/* Estilos para el botón cuando se pasa el mouse por encima */
 .input-box input[type="button"]:hover {
-  opacity: 1;
+  opacity: 1; /* Opacidad completa */
 }
 
+/* Estilos para el contenedor inferior del pie de página */
 .footerButtom {
-  width: 100%;
-  height: 55px;
-  background-color: #000c40;
-  color: #b1b1b1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-
+  width: 100%; /* Ancho completo */
+  height: 55px; /* Altura fija */
+  background-color: #000c40; /* Color de fondo */
+  color: #b1b1b1; /* Color del texto */
+  display: flex; /* Mostrar como flexbox */
+  flex-direction: row; /* Dirección de los elementos */
+  align-items: center; /* Alineación vertical */
+  justify-content: space-evenly; /* Espaciado entre elementos */
 }
+
+/* Estilos para dispositivos con un ancho máximo de 900px */
 @media (max-width: 900px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 900px */
+
+  /* Estilos para el contenedor de enlaces en dispositivos móviles */
   .link-boxes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección vertical */
+    align-items: center; /* Alineación central */
+    text-align: center; /* Alineación del texto al centro */
   }
 
+  /* Estilos para el contenedor inferior en dispositivos móviles */
   .footerButtom {
-    justify-content: center;
-    font-size: 12px;
+    justify-content: center; /* Alineación central */
+    font-size: 12px; /* Tamaño de fuente reducido */
   }
 
+  /* Estilos específicos para el texto PT dentro del contenedor inferior en dispositivos móviles */
   .footerButtom .textPT {
-    display: none;
+    display: none; /* Ocultar el texto PT */
   }
 
+  /* Estilos para el contenedor de enlaces en dispositivos móviles */
   footer .contentFooter .link-boxes {
-    gap: 30px;
+    gap: 30px; /* Espaciado mayor entre elementos */
+  }
+
+  .contentFooter .link-boxes .box .link_name {
+    font-size: 24;
+  }
+  .contentFooter .link-boxes .box li a{
+    font-size: 20px;
   }
 }
+
+/* Configuración personalizada para el scrollbar webkit (Chrome, Safari, Edge) */
+
+/* Estilo del scrollbar principal */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+
+/* Estilo de la pista (fondo) del scrollbar */
+::-webkit-scrollbar-track {
+  background-color: black; /* Color de fondo para la pista del scrollbar */
+}
+
+/* Estilo del thumb (barra deslizante) dentro del scrollbar */
+::-webkit-scrollbar-thumb {
+  border-radius: 100px; /* Radio de borde para el thumb */
+  background-color: #ff893d; /* Color inicial del thumb */
+  background-image: linear-gradient(transparent, #00e0c2); /* Gradiente para el thumb, de transparente a #00e0c2 */
+  transition: opacity 5s;
+}
+
+/* Estilo del thumb cuando se pasa el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+  background-color: red; /* Cambia el color de fondo del thumb al pasar el mouse por encima */
+  background-image: linear-gradient(transparent, white);
+}
+
