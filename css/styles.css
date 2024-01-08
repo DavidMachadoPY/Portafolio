@@ -717,6 +717,7 @@ border-radius: 0 10px 10px 0;
   font-weight: 500;                  /* Peso de fuente */
   margin: auto;                      /* Margen automático horizontal */
   line-height: 1.6;                  /* Altura de línea */
+  font-family: 'Signika Negative';
 }
 
 /* Contenido organizado en cuadrícula */
@@ -747,9 +748,10 @@ border-radius: 0 10px 10px 0;
 /* Estilo para los párrafos dentro de los detalles */
 .about__content-details-para {
   height: 20%;                       /* Altura del 20% */
-  font-size: 15px;                   /* Tamaño de fuente */
+  font-size: 18px;                   /* Tamaño de fuente */
   color: #858585;                    /* Color del texto */
   line-height: 1.7;                  /* Altura de línea */
+  font-family: 'Rajdhani';
 }
 
 /* Estilo para el texto en negrita */
@@ -869,7 +871,7 @@ a {
   margin-bottom: 10px;              /* Margen inferior */
   position: relative;               /* Posición relativa para elementos secundarios */
   color: #ffffff;                   /* Color del texto */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Poppins';
 }
 
 /* Estilos para el subtítulo de proyectos */
@@ -882,7 +884,8 @@ a {
   font-weight: 500;                 
   margin: auto;                     
   line-height: 1.6;                 
-  width: 80%;                       
+  width: 80%;
+  font-family: 'Signika Negative';                     
 }
 
 /* Estilos para el contenedor de tarjetas */
@@ -990,6 +993,11 @@ a {
 @media (max-width: 768px) {
   .card-container {
       grid-template-columns: repeat(2, 1fr); /* 2 columnas para dispositivos medianos */
+  }
+
+  .heading-sec__main,
+  .heading-sec__projects {
+    padding: 0px;
   }
 }
 
